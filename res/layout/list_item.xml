@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/newsbg_listpage" >
+
+    <LinearLayout
+        android:id="@+id/article_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/list_item_horizontal_padding"
+        android:paddingRight="8.0dip"
+        android:paddingTop="10.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="7.0dip" >
+
+            <ImageView
+                android:id="@+id/right_image"
+                android:layout_width="@dimen/right_image_width"
+                android:layout_height="@dimen/right_image_height"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="@drawable/small_image_holder_listpage"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/item_title"
+                style="@style/item_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/right_image" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
